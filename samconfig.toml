@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-app"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-8go4t4ze862n"
+s3_prefix = "sam-app"
+region = "ap-south-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "ProjectName=\"Redis-Listener-Sample\" LatestAmiId=\"/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2\" ElasticacheInstanceClass=\"cache.t3.small\" EC2KeyName=\"redis-test\""
+image_repositories = []
